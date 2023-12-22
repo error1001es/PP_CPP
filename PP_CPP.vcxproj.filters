@@ -33,5 +33,28 @@
     <ClCompile Include="PW4.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="balls.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="PW5.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="spinners.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="text.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="textsw.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="textsh.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="phone.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
   </ItemGroup>
 </Project>

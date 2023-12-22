@@ -5,6 +5,10 @@
 #include "PW2.cpp"
 #include "PW3.cpp"
 #include "PW4.cpp"
+#include "PW5.cpp"
+#include "balls.cpp"
+#include "spinners.cpp"
+#include <bitset>
 
 using namespace std;
 
@@ -57,13 +61,50 @@ int main() {
     cout << "\n";
     drawSinusoid();
     cout << "\n";
-    */
     romanToArabic();
     cout << "\n";
     generateRandom();
     cout << "\n";
     sales();
     cout << "\n";
+    s4isl();
+    cout << "\n"; */
+
+    //Работа 5
+    /*euclid();
+    cout << "\n";
+    sieveOfEratosthenes();
+    cout << "\n";
+    swapCipher();
+    cout << "\n";
+    shiftCipher();
+    cout << "\n";
+    sumOfDigits();
+    cout << "\n";
+    averageHeight();
+    cout << "\n";
+    phonebook();
+    cout << "\n";*/
+
+    
+    //Спиннеры
+    /*spinner1();
+    cout << "\n";
+    spinner2();
+    cout << "\n";
+    task3();
+    cout << "\n";
+    task4();
+    cout << "\n";
+    task5();
+    cout << "\n";*/
+
+    //Шарики
+    //balls(false);
+
+    //drawSinusoid();
+    s4isl();
+    return 0;
 }
 
 

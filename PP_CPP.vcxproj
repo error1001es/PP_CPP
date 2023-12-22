@@ -127,14 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="balls.cpp" />
     <ClCompile Include="PP_CPP.cpp" />
     <ClCompile Include="PW2.cpp" />
     <ClCompile Include="PW3.cpp" />
     <ClCompile Include="PW4.cpp" />
+    <ClCompile Include="PW5.cpp" />
     <ClCompile Include="SafeNumberInput.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="PW1.cpp" />
+    <ClCompile Include="spinners.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="phone.txt" />
+    <Text Include="text.txt" />
+    <Text Include="textsh.txt" />
+    <Text Include="textsw.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -57,21 +57,40 @@ inline void solveQuadraticEquation() {
 
     // Вычисление дискриминанта
     double discriminant = b * b - 4 * a * c;
-
-    if (discriminant > 0) {
-        // Два действительных корня
-        double root1 = (-b + std::sqrt(discriminant)) / (2 * a);
-        double root2 = (-b - std::sqrt(discriminant)) / (2 * a);
-        cout << "Уравнение имеет два действительных корня: x1 = " << root1 << ", x2 = " << root2 << std::endl;
-    } else if (discriminant == 0) {
-        // Один действительный корень
-        double root = -b / (2 * a);
-        cout << "Уравнение имеет один действительный корень: x = " << root << std::endl;
-    } else {
-        // Два комплексных корня
-        double realPart = -b / (2 * a);
-        double imaginaryPart = std::sqrt(-discriminant) / (2 * a);
-        cout << "Уравнение имеет два комплексных корня: x1 = " << realPart << " + " << imaginaryPart << "i, x2 = " << realPart << " - " << imaginaryPart << "i" << std::endl;
+    if (a == 0) {
+        if (b == 0) {
+            if (c == 0) {
+                cout << "Уравнение имеет бесконечное множество решений." << endl;
+            }
+            else {
+                cout << "Уравнение не имеет решений." << endl;
+            }
+        }
+        else {
+            // Решение уравнения и вывод результата
+            double x = -c / b;
+            cout << "Решение уравнения " << b << "x + " << c << " = 0" << endl;
+            cout << "x = " << x << endl;
+        }
+    }
+    else {
+        if (discriminant > 0) {
+            // Два действительных корня
+            double root1 = (-b + std::sqrt(discriminant)) / (2 * a);
+            double root2 = (-b - std::sqrt(discriminant)) / (2 * a);
+            cout << "Уравнение имеет два действительных корня: x1 = " << root1 << ", x2 = " << root2 << std::endl;
+        }
+        else if (discriminant == 0) {
+            // Один действительный корень
+            double root = -b / (2 * a);
+            cout << "Уравнение имеет один действительный корень: x = " << root << std::endl;
+        }
+        else {
+            // Два комплексных корня
+            double realPart = -b / (2 * a);
+            double imaginaryPart = std::sqrt(-discriminant) / (2 * a);
+            cout << "Уравнение имеет два комплексных корня: x1 = " << realPart << " + " << imaginaryPart << "i, x2 = " << realPart << " - " << imaginaryPart << "i" << std::endl;
+        }
     }
 }
 
